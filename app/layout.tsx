@@ -30,7 +30,7 @@ export default function RootLayout({
 			>
 				<Providers>
 					<div className="w-screen h-screen flex justify-center items-center">
-						<div className="w-full h-full lg:h-auto lg:max-w-3xl lg:rounded-3xl bg-white shadow-2xl shadow-black/10 lg:border-8 lg:border-black/5 lg:aspect-[4/3]">
+						<div className="w-full h-full lg:max-w-3xl lg:rounded-3xl bg-white shadow-2xl shadow-black/10 lg:border-8 lg:border-black/5 lg:h-[600px]">
 							{children}
 						</div>
 					</div>
