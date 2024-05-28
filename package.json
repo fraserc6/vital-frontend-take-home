@@ -6,21 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-data": "tsx scripts/generate-data.ts"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.3",
+    "@hookform/resolvers": "^3.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "axios": "^1.7.2",
+    "class-variance-authority": "^0.7.0",
+    "dotenv": "^16.4.5",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-hook-form": "^7.51.5",
+    "sonner": "^1.4.41",
+    "swr": "^2.2.5",
+    "tsx": "^4.11.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "typescript": "^5"
   }
 }
