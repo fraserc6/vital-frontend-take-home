@@ -1,6 +1,6 @@
 ## Fraser Cook - Vital Frontend Take Home Test
 
-You can follow the instructions below to run locally or view on this [Vercel deployment](`https://vital-frontend-take-home.vercel.app/`).
+You can follow instructions below to run the project locally or feel free to view it on this [Vercel deployment](https://vital-frontend-take-home.vercel.app/).
 
 - Core stack: Next.js + Tailwind CSS
 - Time spent: ~ 6 hours
@@ -19,7 +19,7 @@ You should then be able to run the dev server with:
 npm run dev
 ```
 
-Visit [http://localhost:3000](`http://localhost:3000`) in your browser to view.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to view.
 
 ### Considerations
 
@@ -71,33 +71,33 @@ npm run generate-data
 
 ### Third Party Packages
 
-#### Next.js
+#### [Next.js](https://nextjs.org/)
 
 As Next.js is built on top of React and is used internally, I figured it'd be okay to use this as the base for the project. I simply bootstraped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) using the default configuration.
 
-#### Tailwind CSS
+#### [Tailwind CSS](https://tailwindcss.com/)
 
 My styling library of choice - I use it daily and have done for years. In my opinion, it's the best way to style and scale a component driven web app and it's dead easy to maintain.
 
 I've included the `@tailwindcss/forms` plugin as it provides a clean base state for form inputs across browsers to build on top of.
 
-#### React Hook Form + Resolvers + Zod
+#### [React Hook Form](https://react-hook-form.com/) + Resolvers + [Zod](https://zod.dev/)
 
 I typically use RHF and Zod to handle data flow within forms and enforce a schema + validation. It also provides some other cool stuff out the box such as exposing various form states and makes it easy to build more advanced forms.
 
 In an attempt to keep this project light, I wasn't originally going to include this, however I didn't love the idea of submitting a version without any validation at all. By the time I'd hand engineered some basic validation, it endeded up being more markup than if I'd just installed the setup I usually use and would generally recommend.
 
-#### Class Variance Authority (cva)
+#### [Class Variance Authority (CVA)](https://cva.style/docs)
 
 When building more complex components with various visual states and conditionals, you can quickly run into pretty horrible class strings. I always reach for `cva` in these circumstances to create robust class name structures which are much easier to read, maintain and scale.
 
 This is only used on the `<Button />` component right now to provide an insight into how and why this is useful.
 
-#### Sonner
+#### [Sonner](https://sonner.emilkowal.ski/)
 
 A simple toast notification library. It can be customised, but it provides a great out of the box experience with some useful features (e.g. hover and stacking functionality).
 
-#### SWR
+#### [SWR](https://swr.vercel.app/)
 
 I tend to use SWR for all client side requests. It handles caching, deduping and smart revalidation out of the box. It can also be used to support paginated data and immutable requests (no fancy features, just grab the data once).
 
